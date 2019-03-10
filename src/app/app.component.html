@@ -1,0 +1,35 @@
+
+<hr>
+<!--
+<app-employee></app-employee>
+<hr/>
+<div mycol>We all are indians</div>
+<hr/>
+<div *myif="false">We all are indians</div>
+<div *myloop="100">We Love Programming</div>
+-->
+<a routerLink="/">Home</a> | 
+<a routerLink="/contact">Contact Us</a> | 
+<a routerLink="/about">About us</a> | 
+<a [routerLink]="['/users',45]">Users</a> | 
+<a routerLink="/films">Films</a> 
+<hr/>
+<router-outlet></router-outlet>
+
+<!--> Name : {{name}}
+</p>
+<p>
+Age : {{age}}
+</p>
+<p>
+Salary : {{salary}}
+</p>
+The sum is{{a+b}}
+<p>
+Name : <input type="text" #myInput>{{myInput.value}}
+<button (click)="go(myInput)">Show</button>
+</p>
+<p>
+<span #myRef>This is my Country</span>
+<button (click)="changeColor()">Change Color</button>
+</p> -->

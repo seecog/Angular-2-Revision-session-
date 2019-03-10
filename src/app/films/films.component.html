@@ -1,0 +1,15 @@
+<hr><br/><br/><br/><br/>
+
+<div *ngFor="let x of films" style="display:inline-block;margin:15px;padding:15px;border : 1px solid #ccc;width : 200px;height:150px;">
+<h2>{{x.title}}</h2>
+<a [routerLink]="['/films',x.id]">
+Description
+</a> | 
+<a [routerLink]="['/films',x.id,'comments']">
+Comment
+</a>
+</div>
+
+
+<hr/>
+<router-outlet></router-outlet>
